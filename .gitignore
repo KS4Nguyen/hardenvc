@@ -1,52 +1,33 @@
-# Prerequisites
-*.d
-
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
+## trash binary build results, but keep the folder itself!
+bin/
+!bin/.gitkeep
+*.slo
 *.lo
+*.o
 
-# Shared objects (inc. Windows DLLs)
-*.dll
+# compiled dynamic/static linked libraries
+lib/
+!lib/.gitkeep
 *.so
-*.so.*
-*.dylib
+*.lai
+*.la
+*.a
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+## dev-files:
+valgrind.sh
+todo.txt
+.project
+merge
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+## documentation stuff:
+*.log
+*.uxf
+doc/html
+!doc/html/.gitkeep
+doc/*.bak
+doc/doxygen_warnings.log
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+## examples run:
+examples/daemon_logfile.txt
+examples/typescript
+typescript

@@ -1,0 +1,9 @@
+### TODO on bugfixes/potential bugs ###
+
+### TODO on missing features ###
+
+main.c:         Implement an option that provides the master-side process
+		a copy of callers environment: 
+		printf( "    -b        Run %s in background and detached from user TTY.\n", porg_name );
+
+daemon.c:	Implement attaching on new terminal.
