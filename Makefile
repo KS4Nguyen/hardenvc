@@ -96,6 +96,7 @@ uninstall:
 	cd $(IPATH) && rm $(PROGRAMS) pty daemon
 
 documenation:
+	doxygen -s -u Doxyfile
 	doxygen
 
 clean:
@@ -103,5 +104,6 @@ clean:
 	@sh -c 'touch ./bin/dummy && rm ./bin/*'
 	@sh -c 'touch ./lib/dummy && rm ./lib/*'
 	@sh -c 'touch ./dummy.log && rm *.log'
+	@sh -c 'rm -f Doxyfile.bak'
 
 ## EOF
