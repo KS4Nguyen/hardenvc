@@ -399,7 +399,7 @@ void ptym_process_stdio( int pty_amaster, int ignore_eof )
 void usage( char *prog_name )
 {
   printf( "Usage: %s [OPTIONS] \"<program> [ARGS]\"\n", prog_name );
-  printf( "  Run a program connected to a PTS device (pseudo-terminal.)\n" ); 
+  printf( "  Run a program connected to a PTY/PTS device (pseudo-terminal.)\n" ); 
   printf( "\n  OPTIONS:\n" );
   printf( "    -b        Run in background (detached from user session).\n" );
   printf( "    -c        Do not allow parent process control the terminal.\n" );
@@ -408,9 +408,9 @@ void usage( char *prog_name )
   printf( "    -e        Disable echo on terminal output.\n" );
   printf( "    -i        Ignore EOF on read (Use: CTRL-C to stop).\n" );
   printf( "    -n        No interactive.\n" );
-  printf( "    -v        Verbose mode. Print additional information.\n" );
+  printf( "    -v        Verbose mode. Print additional information on stderr.\n" );
   printf( "    -u        Unmount protected. Change to '/' root directory\n" );
-  printf( "               (takes only effect when -b is set).\n" );
+  printf( "              (takes only effect when -b is set).\n" );
   printf( "    -h        Print this help.\n" );
   printf( "\n  ARGS:\n" );
   printf( "    Optional arguments for <program> and <drv>. Use quoted\n" );

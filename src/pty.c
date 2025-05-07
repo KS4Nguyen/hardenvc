@@ -1043,7 +1043,7 @@ int tty_cbreak( int fd )
     goto CBREAK_ERROUT;
   }
 
-  // Verify that the changes stuck:
+  // Verify wether the changes stuck:
   if ( 0 > (err = tcgetattr( fd, &tflags )) ) {
     goto CBREAK_ERROUT;
   }
